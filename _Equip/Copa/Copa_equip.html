@@ -1,0 +1,119 @@
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>LAMPADA</title>
+	<style>
+		body{
+			font-family: Arial;
+			font-size: 10pt;
+			max-width: 390px;
+			overflow: hidden;
+		}
+		p{
+			text-align: justify;
+			text-indent: 20px;
+		}
+		article h1 {
+			font-size: 15pt;
+			color: #ffffff;
+			background-color: rgba(0,0,0,.3);
+			padding: 5px;
+			margin: 0px;
+		}
+		article h2 {
+			font-size: 13pt;
+			color: #888888;
+			margin: 0px;
+		}
+		article{
+			margin-bottom: 400px;
+		}
+		img.img-dir{
+			display: block;
+			float: right;
+			margin-left: 5px;
+		}
+		
+	#copa_1 {
+	position: absolute;
+	
+	top: 10px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    width: 280px;
+    height: 120px; 
+	
+	font-family: 'Titillium Web';
+		font-size: 15pt;
+		color: #888888;
+		padding: 0px;
+		margin-top: 10px;
+		text-align: center
+	
+}
+
+#botao{
+    position: absolute;
+    right: 130px;
+    top: 40px;
+	width: 120px;
+    height: 35px;
+		
+	border-radius:6px;
+	border:1px solid #000000;
+	display:inline-block;
+	
+	background-color:#26A8FF;
+	
+	color:#ffffff;
+	font-family:arial;
+	font-size:18px;
+	font-weight:bold;
+	padding:1px 4px;
+	text-decoration:none;
+	text-shadow:0px 0px 0px #ffffff;
+       
+        text-align: center;
+}
+
+.botao:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+	</style>
+	<script>
+	function AltRele_COPA1(){
+    var estado = document.getElementById("estado").innerHTML;
+    if(estado === "0"){
+        document.getElementById("estado").innerHTML="1";
+        document.getElementById("rele").innerHTML="<div class='rele1_ligado'></div>";
+		document.getElementById("botao").innerHTML="<a href='/?desligar' class='botao'>Desliga</a>";
+    } else {
+        document.getElementById("estado").innerHTML="0";
+        document.getElementById("rele").innerHTML="<div class='rele1_desligado'></div>";
+        document.getElementById("botao").innerHTML="<a href='/?ligar' class='botao'>Liga</a>";
+    }
+}
+	</script>
+
+</head>
+
+<body>
+
+<article id="topo">
+	<div id='copa_1'>LAMPADA 
+			<div id='botao'></div>
+			<div id='rele'></div><div id='estado' style='visibility: hidden;'></div>
+			<script>AltRele_COPA1()</script>
+		</div>
+</article>
+
+
+
+</body>
+
+</html>

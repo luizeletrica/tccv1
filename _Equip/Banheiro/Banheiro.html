@@ -1,0 +1,71 @@
+<!-- //* TOMADA BLUE - TREE BLUE
+
+Esta tomada tem por objetivo monitorar e controlar o consumo energia consumida na sua residencia.
+
+DATA CRIAÇÃO: 05/08/2019
+DATA DE EDIÇÃO: 05/08/2019
+
+AUTORES: Luiz Filipe M. Fraga;
+		 Tiago Soares.
+		 
+- EQUIPAMENTOS - *// -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UFT-8"/>
+	<title>Tomada Blue</title>
+<link rel="stylesheet" type="text/css" href="estilo_banheiro.css">	
+<link rel="stylesheet" type="text/css" href="_css/icons.css">
+<script type='text/javascript' src='fun_banheiro.js'></script>
+
+</head>
+
+<body>
+<div id="interface">
+	
+	<header id="cabecalho">
+	
+	<h1>TOMADA BLUE</h1></br>
+	<h2>Seja bem-vindo USUARIO!</h2>	
+	<h3>Data - Hora</h3>
+	
+	</header>
+	
+	<div id='menu-equip'> <h2>Banheiro</h2>
+		<div id='ban_1'>LAMPADA 
+			<div id='botao'></div>
+			<div id='rele'></div><div id='estado' style='visibility: hidden;'></div>
+			<script>AltRele_BAN1()</script>
+		</div>
+		<div id='ban_2'>CHUVEIRO
+			<div id='botao2'></div>
+			<div id='rele2'></div>
+			<div id='rele'></div><div id='estado2' style='visibility: hidden;'></div>
+			<script>AltRele_BAN2()</script>
+		</div>
+		<div id='ban_3'>TOMADA
+			<div id='botao3'></div>
+			<div id='rele3'></div><div id='estado3' style='visibility: hidden;'></div>
+			<script>AltRele_BAN3()</script>
+		</div>
+		
+		<div id='rele'></div><div id='estado' style='visibility: hidden;'>
+</div>
+		
+
+	</div> 
+	<div id='botao_voltar'><a href="../../Equip.html">VOLTAR</a></div>
+	<div id='botao_MENU'><a href="../../Menu.html">MENU PRINCIPAL</a></div>
+
+</div>
+	
+	
+<footer id="rodape">
+<p>Copyright &copy; 2019 - by Luiz Filipe <br/>
+<a href="https://www.facebook.com/luizfilipe.96" target="_blank"> Facebook</a> | Twitter</p>
+</footer> 
+
+
+</body>
+</html>
