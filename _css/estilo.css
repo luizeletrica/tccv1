@@ -189,7 +189,7 @@ ul#equip-fotos li:hover{
 
 
 ul#equip-fotos li#foto11{
-	background: url('icons/equipamentos.png') no-repeat;
+	background: url('icons2/Banheiro.png') no-repeat;
 	background-position: bottom;
 	margin-bottom: 20px;
 	background-size: 100px 100px;
@@ -198,7 +198,7 @@ ul#equip-fotos li#foto11{
 
 
 ul#equip-fotos li#foto12{
-	background: url('icons/consumo.png') no-repeat;
+	background: url('icons2/Copa.png') no-repeat;
 	background-position: bottom;
 	background-size: 80px 100px;
 	background-color: #ffffff;
@@ -206,7 +206,7 @@ ul#equip-fotos li#foto12{
 
 
 ul#equip-fotos li#foto13{
-	background: url('icons/adc-tomada.png') no-repeat;
+	background: url('icons2/Cozinha.png') no-repeat;
 	background-position: bottom;
 	background-size: 120px 120px;
 	background-color: #ffffff;
@@ -214,28 +214,28 @@ ul#equip-fotos li#foto13{
 
 	
 ul#equip-fotos li#foto14{
-	background: url('icons/config.png') no-repeat;
+	background: url('icons2/Quarto 1.png') no-repeat;
 	background-position: bottom;
 	background-size: 100px 100px;
 	background-color: #ffffff;
 }
 
 ul#equip-fotos li#foto15{
-	background: url('icons/config.png') no-repeat;
+	background: url('icons2/Quarto 2.png') no-repeat;
 	background-position: bottom;
 	background-size: 100px 100px;
 	background-color: #ffffff;
 }
 
 ul#equip-fotos li#foto16{
-	background: url('icons/config.png') no-repeat;
+	background: url('icons2/Sala.png') no-repeat;
 	background-position: bottom;
 	background-size: 100px 100px;
 	background-color: #ffffff;
 }
 
 ul#equip-fotos li#foto17{
-	background: url('icons/config.png') no-repeat;
+	background: url('icons/Varanda.png') no-repeat;
 	background-position: bottom;
 	background-size: 100px 100px;
 	background-color: #ffffff;
