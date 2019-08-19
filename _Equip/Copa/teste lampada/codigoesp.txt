@@ -1,0 +1,179 @@
+//lib necessária para conectar o wifi
+#include <WiFi.h> 
+ 
+String readString; 
+ 
+//led conectado no pino 23
+int pino_rele1 = 0;
+
+boolean ligado = true;
+
+ 
+//mensagem enviada pelo client (aplicativo)
+String ClientRequest;
+ 
+//ip estático, o mesmo deve ser usado no app do smartphone
+IPAddress staticIP(192, 168, 0, 103);
+//gateway, deixe aqui o gateway da rede em que está conectado
+IPAddress gateway(192,168,0,1);
+//máscara, deixe aqui a máscara da rede em que está conectado
+IPAddress subnet(255,255,255,0);
+ 
+//objeto do servidor
+WiFiServer server(80);
+ 
+//objeto do cliente
+WiFiClient client;
+ 
+ //variável usada para obter o request do client 
+String myresultat;
+
+//função usada para a leitura do request sem caracteres de quebra de linha como "\n" ou "\r"
+String ReadIncomingRequest()
+{
+  //enquanto houver bytes enviados pelo client 
+  while(client.available()) 
+  {
+    //atribui para a variável String o comando enviado pelo cliente sem "\r"
+    ClientRequest = (client.readStringUntil('\r'));
+ 
+    //se existir "HTTP/1.1" na String então recebe comando, senão o comando não é aceito
+    //isso verifica que a solicitação seja HTTP/1.1
+    if ((ClientRequest.indexOf("HTTP/1.1")>0))
+      myresultat = ClientRequest;
+  }
+  //retorna variável
+  return myresultat;
+}
+
+void setup()
+{
+  //Inicializa a Serial apenas para efeito de log
+  Serial.begin(115200);
+  
+  //Configura o GPIO0 e GPIO2 como output, ou seja, como 
+  //saída para podermos alterar o seu valor
+   pinMode(pino_rele1, OUTPUT);
+   digitalWrite(0, HIGH);
+ 
+
+
+Serial.print("Conectando");
+//Faz o ESP se conectar à rede WiFi. No nosso exemplo o ssid 
+//da rede é TesteESP e a senha é 87654321
+
+WiFi.begin("Rosana_House", "12345678");
+//Enquanto o ESP não se conectar à rede
+ while (WiFi.status() != WL_CONNECTED)
+ {
+   //Esperamos 100 milisegundos
+   delay(500);
+   Serial.print(".");
+ }
+  
+ //Se chegou aqui é porque conectou à rede, então mostramos 
+ //no monitor serial para termos um feedback
+ Serial.println("");
+ Serial.println("Conectou");
+ 
+ 
+
+//configura ip estático, gateway e máscara (definidos globais no início do código)
+  WiFi.config(staticIP, gateway, subnet);
+  
+ //Mostramos no monitor serial o IP que o ESP possui para verificarmos se 
+ //é o mesmo que configuramos
+ Serial.print("Server em: ");
+ Serial.println(WiFi.localIP());
+ 
+ //inicializa servidor
+  server.begin();
+}
+
+void loop()
+{
+  //Verifica se algum cliente está tentando se conectar
+  WiFiClient client = server.available();
+  if (client) {
+    Serial.println("CONETADO!"); 
+    while (client.connected())
+    {  
+
+      if (client.available())
+      {
+        char c = client.read();
+
+        if (readString.length() < 100) {
+          readString += c;
+        }
+        if (c == 'n')
+        {
+          //Controle do rele1
+          Serial.println(readString);
+          //Liga o Rele 1
+          if (readString.indexOf("?ligar") > 0)
+          {
+            digitalWrite(pino_rele1, LOW);
+            Serial.println("Rele 1 Ligado");
+            ligado = false;
+          }
+          else
+          {
+            //Desliga o Rele 1
+            if (readString.indexOf("?desligar") > 0)
+            {
+              digitalWrite(pino_rele1, HIGH);
+              Serial.println("Rele 1 Desligado");
+              ligado = true;
+            }
+          }
+
+           
+          
+          readString = "";
+          client.println("HTTP/1.1 200 OK");
+          client.println("Content-Type: text/html");
+          client.println();
+          client.println("<html>");
+          client.println("<head>");
+		  client.println("<title>Automacao Residencial</title>");
+          client.println("<meta http-equiv='Content-Type' content='text/html; charset=ISO-8859-1'>");
+          client.println("<meta name='viewport' content='width=720, initial-scale=0.5' />");
+          // O código é hospedado em https://github.com/luizeletrica/automatics mas a conversao para o funcionamento é https://raw.githack.com/
+		  client.println("<link rel='stylesheet' type='text/css' href='https://raw.githack.com/luizeletrica/automatics/master/css.css' />");
+          client.println("<script type='text/javascript' src='https://raw.githack.com/luizeletrica/automatics/master/automacao_residencial.js'></script>");
+          client.println("</head>");
+          client.println("<body>");
+		  
+          
+          client.println("<div id='div1'>Rele 1</div>");
+          
+
+          client.println("<div id='botao'></div>");          
+          
+          
+          client.print("<div id='rele'></div><div id='estado' style='visibility: hidden;'>");
+          client.print(ligado);
+          client.println("</div>");        
+          
+          
+
+          
+          
+          client.println("</div>");
+          client.println("<script>AlteraRele1()</script>");
+          
+          
+		  client.println("<p style='text-align: left;'>Copyright 2019 - by Luiz Filipe - Facebook | Twitter</p>");
+          client.println("</div>");
+          client.println("</body>");
+          client.println("</head>");
+ 
+          delay(1);
+client.stop();
+          
+        }
+      }
+    }
+  }
+}
