@@ -54,7 +54,7 @@ body{
 #botao{
     position: absolute;
     
-    top: 40px;
+    margin: 60px 25px;
 	width: 120px;
     height: 35px;
 		
