@@ -1,0 +1,235 @@
+body { 
+   background-color: #dddddd; 
+   color: rgba(0,0,0,1); 
+   } 
+  
+   div#interface{ 
+     width:600px; 
+     height: 520px; 
+     background-color: #ffffff; 
+     margin: -20px auto 0px auto; 
+     box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
+     padding: 10px; 
+   } 
+   
+      #tela_lamp { 
+   position: absolute; 
+  right:350px; 
+   top: 50px; 
+     border-radius: 25px; 
+     border: 2px solid #000000; 
+     width: 133.3px; 
+     height: 250px; 
+   text-align: center; 
+   } 
+  
+  
+   #grafico { 
+   position: absolute; 
+   right:130px; 
+   top: 50px; 
+     border-radius: 25px; 
+     border: 2px solid #000000; 
+     width: 200px; 
+     height: 250px; 
+   text-align: center; 
+   } 
+  
+   #consumo { 
+   position: absolute; 
+   right:10px; 
+   top: 50px; 
+     border-radius: 25px; 
+     border: 2px solid #000000; 
+     width: 100px; 
+     height: 250px; 
+   text-align: center; 
+   } 
+  
+  
+     p{ 
+      text-align: justify; 
+      text-indent: 15px;
+		font-size:13px;
+     } 
+  
+  
+   header#cabecalho h1{ 
+     font-family: 'FonteLogo', sans-serif; 
+     font-size: 30pt; 
+     color: #606060; 
+     text-shadow: 1px 1px 1px rgba(0,0,0,0.6); 
+     padding: 0px; 
+     margin-bottom: 0px; 
+   } 
+  
+     header#cabecalho h2{ 
+     font-family: 'Titillium Web'; 
+     font-size: 15pt; 
+     color: #888888; 
+     padding: 0px; 
+     margin-top: 0px; 
+   } 
+  
+   header#cabecalho h3{ 
+     position: absolute; 
+     font-family: 'Titillium Web'; 
+     font-size: 15pt; 
+     color: #888888; 
+     padding: 0px; 
+     margin-top: -40px; 
+     left: 550px; 
+   } 
+  
+   #menu-principal { 
+   position: absolute; 
+   right: 280px; 
+   top: 140px; 
+     border-radius: 25px; 
+     border: 2px solid #000000; 
+     width: 750px; 
+     height: 400px;  
+ } 
+  
+   #menu-principal  h2{ 
+     font-family: 'Titillium Web'; 
+     font-size: 18pt; 
+     color: #888888; 
+     padding: 0px; 
+     margin-top: 10px; 
+     text-align: center; 
+   } 
+  
+  
+     #menu-equip { 
+   position: absolute; 
+   right: 220px; 
+   top: 140px; 
+     border-radius: 25px; 
+     border: 2px solid #000000; 
+     width: 500px; 
+     height: 310px;  
+ } 
+  
+   #menu-equip  h2{ 
+     font-family: 'Titillium Web'; 
+     font-size: 20pt; 
+     color: #888888; 
+     padding: 0px; 
+     margin-top: 10px; 
+     text-align: center; 
+   } 
+  
+    
+ #botao{ 
+   position: center-left; 
+   width: 40px; 
+     height: 12px; 
+    
+   border-radius:6px; 
+   border:1px solid #000000; 
+   display:inline-block; 
+  
+   background-color:#26A8FF; 
+  
+   color:#ffffff; 
+   font-family:arial; 
+   font-size:12px; 
+   font-weight:bold; 
+   padding:1px 4px; 
+   text-decoration:none; 
+   text-shadow:0px 0px 0px #ffffff; 
+       
+         text-align: center; 
+ } 
+
+ .botao:active { 
+   position:relative; 
+   top:1px; 
+ } 
+
+
+ #botao2{ 
+   position: center-left; 
+   width: 40px; 
+     height: 12px; 
+    
+   border-radius:6px; 
+   border:1px solid #000000; 
+   display:inline-block; 
+  
+   background-color:#26A8FF; 
+  
+   color:#ffffff; 
+   font-family:arial; 
+   font-size:12px; 
+   font-weight:bold; 
+   padding:1px 4px; 
+   text-decoration:none; 
+   text-shadow:0px 0px 0px #ffffff; 
+       
+         text-align: center; 
+ } 
+
+ .botao2:active { 
+   position:relative; 
+   top:1px; 
+ } 
+
+ #botao_voltar{ 
+     position: absolute; 
+     right: 550px; 
+     top: 480px; 
+   width: 80px; 
+     height: 20px; 
+    
+   border-radius:6px; 
+   border:1px solid #000000; 
+   display:inline-block; 
+  
+   background-color:#26A8FF; 
+  
+   color:#ffffff; 
+   font-family:arial; 
+   font-size:15px; 
+   font-weight:bold; 
+   padding:1px 4px; 
+   text-decoration:none; 
+   text-shadow:0px 0px 0px #ffffff; 
+       
+         text-align: center; 
+ } 
+
+ #botao_MENU{ 
+     position: absolute; 
+     right: 200px; 
+     top: 480px; 
+   width: 160px; 
+     height: 20px; 
+    
+   border-radius:6px; 
+   border:1px solid #000000; 
+   display:inline-block; 
+  
+   background-color:#26A8FF; 
+  
+   color:#ffffff; 
+   font-family:arial; 
+   font-size:15px; 
+   font-weight:bold; 
+   padding:1px 4px; 
+   text-decoration:none; 
+   text-shadow:0px 0px 0px #ffffff; 
+       
+         text-align: center; 
+ } 
+
+ footer#rodape { 
+   clear: both; 
+  
+ } 
+
+ footer#rodape p { 
+   text-align: center; 
+  
+ }

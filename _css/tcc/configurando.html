@@ -1,0 +1,82 @@
+ <html> 
+   <head> 
+     <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'/> 
+     <title>Tomada Blue</title> 
+   <link rel="stylesheet" type="text/css" media="screen and (min-width: 0px)" href="small.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 800px)" href="medium.css" />
+	<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="large.css" />
+	
+
+ <body> 
+ <div id='interface'> 
+  
+   <header id='cabecalho'> 
+  
+   <h1>TOMADA BLUE</h1></br> 
+   <h2>Seja bem-vindo USUARIO!</h2>   
+   <h3>Data - Hora</h3> 
+  
+   </header> 
+  
+   <div id='menu-equip'> <h2>Banheiro - Lampada</h2> 
+     
+      <div id='tela_lamp'> 
+     
+      <div id='wrapper'><img alt='Lamp' src='https://raw.githack.com/luizeletrica/automatics/master/lampada_desligada.png'/><br/><br/> 
+       </div> 
+       <div id='botao2'><a href='/releon'>ON</a></div> 
+     <div id='botao'><a href='/releoff'>OFF</a></div> 
+     <p id='leitura'>leitura: </p> 
+       <p id='leitura2'>leitura 2: </p> 
+       <p id='leitura3'>leitura 3: </p> 
+       <p id='leitura4'>leitura 4: </p> 
+     </div> 
+  
+   <div id='grafico'> <h3>Grafico</h3> 
+     </div> 
+    
+     <div id='consumo'> <h3>Consumo</h3> 
+     <p id='vparcial'>Valor Parcial: </p> 
+     <p id='valor1'>R$ </p> 
+     <p id='vprevisto'>Valor Previsto: </p> 
+     <p id='valor2'>R$ </p> 
+     </div> 
+
+   </div>  
+   <div id='botao_voltar'><a href='https://raw.githack.com/luizeletrica/tccv1/master/_Equip/Banheiro/Banheiro.html'>VOLTAR</a></div> 
+   <div id='botao_MENU'><a href='http://192.162.0.103'>MENU PRINCIPAL</a></div> 
+
+ </div> 
+  
+  
+ <footer id='rodape'> 
+ <p>Copyright &copy; 2019 - by Luiz Filipe <br/> 
+ <a href='https://www.facebook.com/luizfilipe.96' target='_blank'> Facebook</a> | Twitter</p> 
+ </footer> 
+
+ </body> 
+
+  <script type='text/javascript'> 
+    refresh();  
+    setInterval(refresh, 100); 
+    function refresh() 
+    { 
+     
+      refreshleitura(); 
+    } 
+   
+    function refreshleitura() 
+     { 
+       var xmlhttp = new XMLHttpRequest(); 
+       xmlhttp.onreadystatechange = function() { 
+         if (xmlhttp.readyState == XMLHttpRequest.DONE && xmlhttp.status == 200){ 
+           document.getElementById('leitura').innerHTML = 'leitura: ' + JSON.parse(xmlhttp.responseText).leitura + '%'; 
+         } 
+       }; 
+       xmlhttp.open('GET', 'http://192.168.0.106/leitura', true); 
+    
+       xmlhttp.send(); 
+     } 
+  
+   </script> 
+   </html> 
