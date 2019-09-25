@@ -173,63 +173,61 @@ ul#album-fotos li#foto04{
 	
 }
 
-#botao{
-    position: absolute;
-    right: 100px;
-    top: 40px;
-	width: 120px;
-    height: 35px;
-		
-	border-radius:6px;
-	border:1px solid #000000;
-	display:inline-block;
-	
-	background-color:#26A8FF;
-	
-	color:#ffffff;
-	font-family:arial;
-	font-size:18px;
-	font-weight:bold;
-	padding:1px 4px;
-	text-decoration:none;
-	text-shadow:0px 0px 0px #ffffff;
+#botao1{ 
+   position: center-left; 
+   width: 40px; 
+     height: 12px; 
+    
+   border-radius:6px; 
+   border:1px solid #000000; 
+   display:inline-block; 
+  
+   background-color:#26A8FF; 
+  
+   color:#ffffff; 
+   font-family:arial; 
+   font-size:12px; 
+   font-weight:bold; 
+   padding:1px 4px; 
+   text-decoration:none; 
+   text-shadow:0px 0px 0px #ffffff; 
        
-        text-align: center;
-}
+         text-align: center; 
+ } 
 
-.botao:active {
-	position:relative;
-	top:1px;
-}
+ .botao1:active { 
+   position:relative; 
+   top:1px; 
+ } 
 
-#botao12{
-    position: absolute;
-    right: 100px;
-    top: 40px;
-	width: 120px;
-    height: 35px;
-		
-	border-radius:6px;
-	border:1px solid #000000;
-	display:inline-block;
-	
-	background-color:#26A8FF;
-	
-	color:#ffffff;
-	font-family:arial;
-	font-size:18px;
-	font-weight:bold;
-	padding:1px 4px;
-	text-decoration:none;
-	text-shadow:0px 0px 0px #ffffff;
+
+ #botao12{ 
+   position: center-left; 
+   width: 40px; 
+     height: 12px; 
+    
+   border-radius:6px; 
+   border:1px solid #000000; 
+   display:inline-block; 
+  
+   background-color:#26A8FF; 
+  
+   color:#ffffff; 
+   font-family:arial; 
+   font-size:12px; 
+   font-weight:bold; 
+   padding:1px 4px; 
+   text-decoration:none; 
+   text-shadow:0px 0px 0px #ffffff; 
        
-        text-align: center;
-}
+         text-align: center; 
+ } 
 
-.botao12:active {
-	position:relative;
-	top:1px;
-}
+ .botao12:active { 
+   position:relative; 
+   top:1px; 
+ } 
+
 
 
 #ban_2 {
