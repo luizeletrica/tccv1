@@ -103,7 +103,7 @@ body {
   
      #menu-equip { 
    position: absolute; 
-   right: 100px; 
+   right: 30px; 
    top: 90px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
@@ -178,7 +178,7 @@ body {
 
  #botao_voltar{ 
      position: absolute; 
-     right: 300px; 
+     right: 230px; 
      top: 920px; 
    width: 80px; 
      height: 20px; 
@@ -202,7 +202,7 @@ body {
 
  #botao_MENU{ 
      position: absolute; 
-     right: 100px; 
+     right: 30px; 
      top: 920px; 
    width: 160px; 
      height: 20px; 
