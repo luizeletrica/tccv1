@@ -45,6 +45,23 @@ body {
      height: 300px; 
    text-align: center; 
    } 
+
+ #myCanvas {
+        float:left;
+    }
+    legend {
+        font-family:Arial;
+        font-size:12px;
+        float:left;
+        margin-top:50px;
+    }
+    #tip {
+        background-color:white;
+        border:1px solid #808080;
+        position:absolute;
+        left:-200px;
+        top:100px;
+    }
   
   
      p{ 
