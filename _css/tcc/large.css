@@ -241,7 +241,7 @@ body {
          text-align: center; 
  } 
 
-div.rele1_ligado {
+#rele1_ligado {
     position: absolute;
     right: 10px;
     top: 100px;
@@ -252,7 +252,7 @@ div.rele1_ligado {
     background: url(https://raw.githack.com/luizeletrica/automatics/master/lampada_ligada.png) no-repeat left top;
 }
 
-div.rele1_desligado {
+#rele1_desligado {
     position: absolute;
     right: 10px;
     top: 10px;
