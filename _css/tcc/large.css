@@ -241,6 +241,27 @@ body {
          text-align: center; 
  } 
 
+div.rele1_ligado {
+    position: absolute;
+    right: -110px;
+    top: 220px;
+    width: 300px;
+    height: 206px;
+    border: none;
+		margin:auto;
+    background: url(https://raw.githack.com/luizeletrica/automatics/master/lampada_ligada.png) no-repeat left top;
+}
+
+div.rele1_desligado {
+    position: absolute;
+    right: -110px;
+    top: 220px;
+    width: 300px;
+    height: 206px;
+    border: none;
+	background: url(https://raw.githack.com/luizeletrica/automatics/master/lampada_desligada.png) no-repeat left top;
+}
+
  footer#rodape { 
    clear: both; 
   
