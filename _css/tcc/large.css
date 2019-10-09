@@ -4,7 +4,7 @@ body {
    } 
   
    div#interface{ 
-     width:900px; 
+     width:1000px; 
      height: 600px; 
      background-color: #ffffff; 
      margin: -20px auto 0px auto; 
@@ -14,7 +14,7 @@ body {
    
       #tela_lamp { 
    position: absolute; 
-  right:525px; 
+  right:680px; 
    top: 50px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
@@ -26,11 +26,11 @@ body {
   
    #grafico { 
    position: absolute; 
-   right:193px; 
+   right:170px; 
    top: 50px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
-     width: 310px; 
+     width: 500px; 
      height: 300px; 
    text-align: center; 
    } 
@@ -46,24 +46,7 @@ body {
    text-align: center; 
    } 
 
- #myCanvas {
-        float:left;
-    }
-    legend {
-        font-family:Arial;
-        font-size:12px;
-        float:left;
-        margin-top:50px;
-    }
-    #tip {
-        background-color:white;
-        border:1px solid #808080;
-        position:absolute;
-        left:-200px;
-        top:100px;
-    }
-  
-  
+   
      p{ 
       text-align: justify; 
       text-indent: 20px;
@@ -120,11 +103,11 @@ body {
   
      #menu-equip { 
    position: absolute; 
-   right: 280px; 
+   right: 220px; 
    top: 140px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
-     width: 750px; 
+     width: 900px; 
      height: 400px;  
  } 
   
@@ -249,7 +232,7 @@ body {
     height: 206px;
     border: none;
 		margin:auto;
-    background: url(https://raw.githack.com/luizeletrica/automatics/master/lampada_ligada.png) no-repeat left top;
+    background: url(lampada_ligada.png) no-repeat left top;
 }
 
 #rele1_desligado {
@@ -259,7 +242,7 @@ body {
     width: 300px;
     height: 206px;
     border: none;
-	background: url(https://raw.githack.com/luizeletrica/automatics/master/lampada_desligada.png) no-repeat left top;
+	background: url(lampada_desligada.png) no-repeat left top;
 }
 
  footer#rodape { 
