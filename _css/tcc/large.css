@@ -232,7 +232,7 @@ body {
     height: 206px;
     border: none;
 		margin:auto;
-    background: url(lampada_ligada.png) no-repeat left top;
+    background: url(https://raw.githubusercontent.com/luizeletrica/tccv1/master/_css/tcc/lampada_ligada.png) no-repeat left top;
 }
 
 #rele1_desligado {
@@ -242,7 +242,7 @@ body {
     width: 110px;
     height: 110px;
     border: none;
-	background: url(lampada_desligada.png) no-repeat left top;
+	background: url(https://raw.githubusercontent.com/luizeletrica/tccv1/master/_css/tcc/lampada_desligada.png) no-repeat left top;
 }
 
  footer#rodape { 
