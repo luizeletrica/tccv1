@@ -224,27 +224,6 @@ body {
          text-align: center; 
  } 
 
-#rele1_ligado {
-    position: absolute;
-    right: 10px;
-    top: 110px;
-    width: 110px;
-    height: 206px;
-    border: none;
-		margin:auto;
-    background: url(https://raw.githubusercontent.com/luizeletrica/tccv1/master/_css/tcc/lampada_ligada.png) no-repeat left top;
-}
-
-#rele1_desligado {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 110px;
-    height: 110px;
-    border: none;
-	background: url(https://raw.githubusercontent.com/luizeletrica/tccv1/master/_css/tcc/lampada_desligada.png) no-repeat left top;
-}
-
  footer#rodape { 
    clear: both; 
   
@@ -254,4 +233,35 @@ body {
    text-align: center; 
   
  }
+
+div.rele1_ligado {
+    position: relative;
+    right: -10px;
+    top: 5px;
+    width: 110px;
+    height: 110px;
+    border: none;
+		margin:auto;
+    background: url(lampada_ligada.png) no-repeat left top;
+}
+
+div.rele1_desligado {
+    position: relative;
+    right: -10px;
+    top: 5px;
+    width: 110px;
+    height: 110px;
+    border: none;
+	background: url(lampada_desligada.png) no-repeat left top;
+}
+
+        #wgt { 
+   position: relative; 
+  right:-40px; 
+   top: 0px; 
+     
+     width: 110px; 
+     height: 110px; 
+   
+   } 
  
