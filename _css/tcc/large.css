@@ -4,57 +4,15 @@ body {
    } 
   
    div#interface{ 
-     width:1000px; 
-     height: 600px; 
+     width:1200px; 
+     height: 700px; 
      background-color: #ffffff; 
-     margin: -20px auto 0px auto; 
+     margin: -30px auto 0px auto; 
      box-shadow: 0px 0px 10px rgba(0,0,0,.5); 
      padding: 10px; 
    } 
    
-      #tela_lamp { 
-   position: absolute; 
-  right:680px; 
-   top: 50px; 
-     border-radius: 25px; 
-     border: 2px solid #000000; 
-     width: 200px; 
-     height: 300px; 
-   text-align: center; 
-   } 
-  
-  
-   #grafico { 
-   position: absolute; 
-   right:170px; 
-   top: 50px; 
-     border-radius: 25px; 
-     border: 2px solid #000000; 
-     width: 500px; 
-     height: 300px; 
-   text-align: center; 
-   } 
-  
-   #consumo { 
-   position: absolute; 
-   right:20px; 
-   top: 50px; 
-     border-radius: 25px; 
-     border: 2px solid #000000; 
-     width: 150px; 
-     height: 300px; 
-   text-align: center; 
-   } 
-
-   
-     p{ 
-      text-align: justify; 
-      text-indent: 20px;
-        text-size: 15px;
-     } 
-  
-  
-   header#cabecalho h1{ 
+      header#cabecalho h1{ 
      font-family: 'FonteLogo', sans-serif; 
      font-size: 30pt; 
      color: #606060; 
@@ -64,51 +22,24 @@ body {
    } 
   
      header#cabecalho h2{ 
+	 position: absolute;
      font-family: 'Titillium Web'; 
      font-size: 15pt; 
      color: #888888; 
      padding: 0px; 
-     margin-top: 0px; 
+     margin-top: -50px; 
+     right: 100px; 
+	 left: 900px; 
    } 
-  
-   header#cabecalho h3{ 
-     position: absolute; 
-     font-family: 'Titillium Web'; 
-     font-size: 15pt; 
-     color: #888888; 
-     padding: 0px; 
-     margin-top: -40px; 
-     left: 1000px; 
-   } 
-  
-   #menu-principal { 
-   position: absolute; 
-   right: 280px; 
-   top: 140px; 
-     border-radius: 25px; 
-     border: 2px solid #000000; 
-     width: 750px; 
-     height: 400px;  
- } 
-  
-   #menu-principal  h2{ 
-     font-family: 'Titillium Web'; 
-     font-size: 25pt; 
-     color: #888888; 
-     padding: 0px; 
-     margin-top: 10px; 
-     text-align: center; 
-   } 
-  
-  
+   
      #menu-equip { 
    position: absolute; 
-   right: 220px; 
-   top: 140px; 
+   right: 150px; 
+   top: 80px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
-     width: 900px; 
-     height: 400px;  
+     width: 1100px; 
+     height: 550px;  
  } 
   
    #menu-equip  h2{ 
@@ -119,12 +50,25 @@ body {
      margin-top: 10px; 
      text-align: center; 
    } 
-  
+   
+      #tela_lamp { 
+   position: absolute; 
+  right:600px; 
+   top: 50px; 
+     border-radius: 25px; 
+     border: 2px solid #000000; 
+     width: 460px; 
+     height: 495px; 
+   text-align: center; 
+   } 
+   
+
+   
     
  #botao{ 
    position: center-left; 
    width: 70px; 
-     height: 35px; 
+     height: 25px; 
     
    border-radius:6px; 
    border:1px solid #000000; 
@@ -144,7 +88,7 @@ body {
  } 
 
  .botao:active { 
-   position:relative; 
+   position:absolute; 
    top:1px; 
  } 
 
@@ -152,7 +96,7 @@ body {
  #botao2{ 
    position: center-left; 
    width: 70px; 
-     height: 35px; 
+     height: 25px; 
     
    border-radius:6px; 
    border:1px solid #000000; 
@@ -172,14 +116,51 @@ body {
  } 
 
  .botao2:active { 
-   position:relative; 
+   position:absolute; 
    top:1px; 
  } 
+ 
+  #medcorrente { 
+   position: absolute; 
+  /*  right: 20px; 
+   top: 200px;  */ 
+  /*    border-radius: 25px; 
+     border: 2px solid #000000;  */
+	      width: 120px; 
+     height: 120px;  
+ } 
+  
+  
+   #grafico { 
+   position: absolute; 
+   right:50px; 
+   top: 50px; 
+     border-radius: 25px; 
+     border: 2px solid #000000; 
+     width: 500px; 
+     height: 300px; 
+   text-align: center; 
+   } 
+   
+  
+   #consumo { 
+   position: absolute; 
+   right:50px; 
+   top: 358px; 
+     border-radius: 25px; 
+     border: 2px solid #000000; 
+     width: 500px; 
+     height: 185px; 
+   text-align: center;
+   } 
+
+     
+  
 
  #botao_voltar{ 
      position: absolute; 
      right: 800px; 
-     top: 560px; 
+     top: 660px; 
    width: 100px; 
      height: 25px; 
     
@@ -203,7 +184,7 @@ body {
  #botao_MENU{ 
      position: absolute; 
      right: 300px; 
-     top: 560px; 
+     top: 660px; 
    width: 200px; 
      height: 25px; 
     
@@ -234,26 +215,7 @@ body {
   
  }
 
-div.rele1_ligado {
-    position: relative;
-    right: -10px;
-    top: 5px;
-    width: 110px;
-    height: 110px;
-    border: none;
-		margin:auto;
-    background: url(lampada_ligada.png) no-repeat left top;
-}
 
-div.rele1_desligado {
-    position: relative;
-    right: -10px;
-    top: 5px;
-    width: 110px;
-    height: 110px;
-    border: none;
-	background: url(lampada_desligada.png) no-repeat left top;
-}
 
         #wgt { 
    position: relative; 
@@ -264,5 +226,7 @@ div.rele1_desligado {
      height: 110px; 
    
    } 
+
+ 
 
  
