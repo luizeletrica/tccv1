@@ -28,7 +28,7 @@ body {
      color: #888888; 
      padding: 0px; 
      margin-top: -33px; 
-     right: 120px; 
+     right: 60px; 
 	
    } 
    
@@ -39,13 +39,13 @@ body {
      color: #888888; 
      padding: 0px; 
      margin-top: -15px; 
-     right: 150px; 
+     right: 50px; 
 	  
    }
    
      #menu-equip { 
    position: absolute; 
-   right: 0px; 
+   right: 20px; 
    top: 40px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
