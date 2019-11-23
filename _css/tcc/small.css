@@ -4,7 +4,7 @@ body {
    } 
   
    div#interface{ 
-      width:460px; 
+      width:450px; 
      height: 1200px; 
      background-color: #ffffff; 
      margin: -30px auto 0px auto; 
@@ -49,7 +49,7 @@ body {
    top: 40px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
-     width: 450px; 
+     width: 306px; 
      height: 1080px;  
  } 
   
@@ -68,7 +68,7 @@ body {
    top: 50px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
-     width: 445px; 
+     width: 300px; 
      height: 495px; 
    text-align: center; 
    } 
@@ -84,7 +84,8 @@ body {
    border-radius:6px; 
    border:1px solid #000000; 
    display:inline-block; 
-     background-color:#26A8FF; 
+  
+   background-color:#26A8FF; 
   
    color:#ffffff; 
    font-family:arial; 
@@ -136,7 +137,7 @@ body {
    top: 200px;  */ 
   /*    border-radius: 25px; 
      border: 2px solid #000000;  */
-	      width: 445px; 
+	      width: 120px; 
      height: 120px;  
  } 
   
@@ -148,7 +149,7 @@ body {
      border-radius: 25px; 
      border: 2px solid #000000; 
      width: 300px; 
-     height: 445px; 
+     height: 330px; 
    text-align: center; 
    } 
    
@@ -159,7 +160,7 @@ body {
    top: 888px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
-     width: 445px; 
+     width: 300px; 
      height: 185px; 
    text-align: center;
    } 
@@ -261,5 +262,4 @@ width:280;
 height:120;
 
 }
-
 
