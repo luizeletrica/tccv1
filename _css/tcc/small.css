@@ -45,7 +45,7 @@ body {
    
      #menu-equip { 
    position: absolute; 
-   right: 20px; 
+   right: -100px; 
    top: 40px; 
      
      width: 306px; 
@@ -159,7 +159,7 @@ body {
    top: 888px; 
      border-radius: 25px; 
      border: 2px solid #000000; 
-     width: 300px; 
+     width: 450px; 
      height: 185px; 
    text-align: center;
    } 
